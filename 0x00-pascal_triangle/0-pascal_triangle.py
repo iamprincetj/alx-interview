@@ -13,11 +13,16 @@ def pascal_triangle(n):
     """
     if n <= 0:
         return []
-    triangle = [[1]]
-    for i in range(1, n):
-        row = [1]
-        for j in range(1, i):
-            row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
-        row.append(1)
-        triangle.append(row)
-    return triangle
+    mylist = [1]
+    mylist1 = [[1]]
+    count = 0
+    while count != (n-1):
+        new_list = [1]
+        for i in range(len(mylist) - 1):
+            new_val = mylist[i] + mylist[i + 1]
+            new_list.append(new_val)
+        new_list.append(1)
+        mylist1.append(new_list)
+        mylist = new_list
+        count += 1
+    return mylist1
