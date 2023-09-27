@@ -8,7 +8,7 @@ def print_triangle(n):
     if type(n) is not int:
         raise TypeError("n must be a number")
     if n <= 0:
-        return [[]]
+        return []
     if n == 1:
         return [[1]]
     if n == 2:
