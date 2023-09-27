@@ -14,7 +14,7 @@ def pascal_triangle(n):
     if type(n) is not int:
         raise TypeError("n must be a number")
     if n <= 0:
-        return [[]]
+        return []
     mylist = [1]
     mylist1 = [[1]]
     count = 0
