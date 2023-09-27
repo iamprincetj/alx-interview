@@ -1,4 +1,7 @@
 def pascal_triangle(n):
+
+    if n <= 0:
+        return []
     mylist = [1]
     mylist1 = [[1]]
     count = 0
