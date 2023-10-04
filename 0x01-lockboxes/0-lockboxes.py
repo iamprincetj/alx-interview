@@ -5,6 +5,12 @@
 
 def canUnlockAll(boxes):
     ''' A method that determines if all the boxes can be opened '''
+    if boxes == 0:
+        return False
+    if not isinstance(boxes, list):
+        return False
+    if len(boxes) == 0:
+        return False
 
     unlock = {0: "unlocked"}
     keys = [key for key in boxes[0] if key not in unlock]
