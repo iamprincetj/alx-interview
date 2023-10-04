@@ -6,7 +6,7 @@
 def canUnlockAll(boxes):
     ''' A method that determines if all the boxes can be opened '''
     if not boxes or type(boxes) is not list:
-    return False
+        return False
 
     unlocked = [0]
     for n in unlocked:
