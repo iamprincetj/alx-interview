@@ -4,7 +4,7 @@
 
 def minOperations(n: int) -> int:
     """ Minimum Operations """
-    if n <= 1:
+    if n <= 1 or isinstance(n, int) is False:
         return 0
     i = 2
     res = 0
