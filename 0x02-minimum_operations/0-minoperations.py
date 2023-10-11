@@ -2,7 +2,7 @@
 """ Minimum Operations """
 
 
-def minOperations(n):
+def minOperations(n: int) -> int:
     """ Minimum Operations """
     if n <= 1:
         return 0
