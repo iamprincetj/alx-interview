@@ -6,7 +6,7 @@
 
 def rotate_2d_matrix(matrix):
     """
-       Rotate 2D Matrix function 
+    Rotate 2D Matrix function
     """
     len_list = len(matrix) - 1
     matrix_copy = matrix.copy()
